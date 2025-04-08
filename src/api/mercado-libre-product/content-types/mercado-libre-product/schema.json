@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mercado_libre_products",
+  "info": {
+    "singularName": "mercado-libre-product",
+    "pluralName": "mercado-libre-products",
+    "displayName": "MercadoLibreProduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "amazon_products",
+  "info": {
+    "singularName": "amazon-product",
+    "pluralName": "amazon-products",
+    "displayName": "AmazonProduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
