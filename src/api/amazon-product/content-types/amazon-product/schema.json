@@ -4,7 +4,8 @@
   "info": {
     "singularName": "amazon-product",
     "pluralName": "amazon-products",
-    "displayName": "AmazonProduct"
+    "displayName": "AmazonProduct",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,20 +18,31 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "price": {
       "type": "decimal"
     },
     "url": {
       "type": "string"
+    },
+    "categoriaProducto": {
+      "type": "enumeration",
+      "enum": [
+        "Ámate",
+        "Tu hogar",
+        "Bebés",
+        "Deporte y salud",
+        "Ropa, bolsas y calzad y más"
+      ]
     }
   }
 }

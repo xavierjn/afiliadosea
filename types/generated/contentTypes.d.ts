@@ -373,6 +373,7 @@ export interface ApiAmazonProductAmazonProduct
   extends Struct.CollectionTypeSchema {
   collectionName: 'amazon_products';
   info: {
+    description: '';
     displayName: 'AmazonProduct';
     pluralName: 'amazon-products';
     singularName: 'amazon-product';
@@ -381,6 +382,15 @@ export interface ApiAmazonProductAmazonProduct
     draftAndPublish: true;
   };
   attributes: {
+    categoriaProducto: Schema.Attribute.Enumeration<
+      [
+        '\u00C1mate',
+        'Tu hogar',
+        'Beb\u00E9s',
+        'Deporte y salud',
+        'Ropa, bolsas y calzad y m\u00E1s',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -409,6 +419,7 @@ export interface ApiMercadoLibreProductMercadoLibreProduct
   extends Struct.CollectionTypeSchema {
   collectionName: 'mercado_libre_products';
   info: {
+    description: '';
     displayName: 'MercadoLibreProduct';
     pluralName: 'mercado-libre-products';
     singularName: 'mercado-libre-product';
@@ -417,6 +428,15 @@ export interface ApiMercadoLibreProductMercadoLibreProduct
     draftAndPublish: true;
   };
   attributes: {
+    categoriaProducto: Schema.Attribute.Enumeration<
+      [
+        '\u00C1mate',
+        'Tu hogar',
+        'Beb\u00E9s',
+        'Deporte y salud',
+        'Ropa, bolsas y calzad y m\u00E1s',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
